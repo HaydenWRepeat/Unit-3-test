@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hayden Wiechens">
+    <meta name="description" content="Home page of the website">
+    <meta property="og:imgae" content="Picture of a spaceship">
+    <meta property="og:image" content="A nice light colored background">
+    <title>Unit 3 Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/pexels-pixabay-2159.jpg" type="image/x-icon">
+</head>
+<body style="background-image: url(images/lightBackground.png);">
+
+<nav>
+    <fieldset>
+        <legend>Links to other pages</legend>
+            <ul>
+                <li><a href ="index.html" title ="home page" target ="_blank">Home Page</a></li>
+                <li><a href ="quiz.html" title ="quiz" target ="_blank">Quiz Page</a></li>
+                <li><a href ="survey.html" title ="survey" target ="_blank">Survey Page</a></li>
+            </ul>
+    </fieldset>
+</nav>
+    <header>
+        <h1>Welcome to my site!</h1>
+    </header>
+
+    <p>
+        <em>On this site you can take a short quiz then take our short survey.</em>
+    </p>
+
+    <p>
+        <strong>Only way we can get better is by hearing what you have to say.</strong>
+    </p>
+
+    <h3>Log in Below</h3>
+    <form action="data.json" method="POST">
+    <fieldset>
+        <legend>User Information</legend>
+            <ul>
+                <li><label for="name">User Name</label></li>
+                <input type="text" id="name" name="user.name">
+                <br>
+                <li><label for="pass">Password</label></li>
+                <input type="password" id="pass" pass="user.pass">
+                <br>
+                <li><label for="useridnum">User Identifcation Number</label></li>
+                <input type="text" id="useridnum" useridnum="user.idnum">
+                <br>
+                <li><label for="todaysdate">Today's Date</label></li>
+                <input type="date" id="todaysdate" ="user.date">
+            </ul>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+    </fieldset>
+    </form>
+</body>
+</html>

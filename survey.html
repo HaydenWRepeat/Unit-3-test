@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hayden Wiechens">
+    <meta name="description" content="Survey">
+    <meta property="og:image" content="Picture of a spaceship">
+    <meta property="og:image" content="A nice light colored background">
+    <title>Survey page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/pexels-pixabay-2159.jpg" type="image/x-icon">
+</head>
+<body style="background-image: url(images/lightBackground.png);">
+    <nav>
+        <fieldset>
+            <legend>Links to other pages</legend>
+                <ul>
+                    <li><a href ="index.html" title ="home page" target ="_blank">Home Page</a></li>
+                    <li><a href ="quiz.html" title ="quiz" target ="_blank">Quiz Page</a></li>
+                    <li><a href ="survey.html" title ="survey" target ="_blank">Survey Page</a></li>
+                </ul>
+        </fieldset>
+    </nav>
+    <header>THANK YOU!</header>
+    <p>We appreciate you visiting our site.<em>Without user like you we could not continue.</em></p>
+
+    <p><strong>PLEASE</strong> take a minute to fill out this quick survey</p>
+
+    <form action="data.json" method="POST">
+    <fieldset>
+        <legend>Survey</legend>
+        <ul>
+            <li><label for="name">Name</label></li>
+            <input type="text" id="name" name="user.name">
+            <li><label for="email">Email</label></li>
+            <input type="text" id="email" email="user.email">
+            <li><label for="phonenum">Phone Number</label></li>
+            <input type="text" id="phonenum" phonenum="user.phonenum">
+            <li><label for="improvements">Please tell us anything we can improve on</label></li>
+            <li><textarea name="user.imp" id="improvements" cols="30" rows="10"></textarea></li>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </ul>
+    </fieldset>
+    </form>
+</body>
+</html>
